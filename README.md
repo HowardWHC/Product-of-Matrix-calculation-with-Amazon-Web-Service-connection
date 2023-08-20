@@ -24,16 +24,19 @@ Staying the same Services, click "Security groups" under "Security", then click 
 -> Security group name: set it to "mini_project" 
 -> Description: Type "Allow user to SSH and run Java program with host 42210" // Just for identifying 
 ![image](https://github.com/HowardWHC/Product-of-Matrix-calculation-with-Amazon-Web-Service-connection/assets/106338557/a72258e6-36d1-46cf-bfa4-bad270c21a8b)
+
 Add two Inbound rules:
 Inbound rule 1:
 Type: SSH (Protocol and Port range will be locked at TCP and 22)
 Source type: Anywhere-IPv4
 ![image](https://github.com/HowardWHC/Product-of-Matrix-calculation-with-Amazon-Web-Service-connection/assets/106338557/a7d71710-25ae-4e2c-9ada-87e1cfab4281)
+
 Inbound rule 2:
 Type: Custom TCP
 Port range: 42210
 Source type: Anywhere-IPv4
 ![image](https://github.com/HowardWHC/Product-of-Matrix-calculation-with-Amazon-Web-Service-connection/assets/106338557/eb6d3c2c-7c7d-42f4-9261-0808d354d4ff)
+
 
 Another setting that hasn't been mentioned, leave it by default setting.
 ----------------
