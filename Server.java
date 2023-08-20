@@ -13,19 +13,13 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.RecursiveAction;
 
-/**
- * Multi-threaded server program that multiplies matrices using fork-join
- * framework.
- *
- * @author vanting
- */
+
 public class Server implements Runnable {
 
     public static final int DEFAULT_PORT = 42210;
     private Socket socket;
 
     public server() {
-        // 
     }
 
     public Server(Socket socket) {
@@ -43,12 +37,9 @@ public class Server implements Runnable {
      * Start matrix server at the specified port. It should accept and handle
      * multiple client requests concurrently.
      *
-     * @param port port number listened by the server
+     * @param port number listened by the server
      */
     public static void start(int port) throws IOException, ClassNotFoundException{
-        
-
-        // your implementation here
         
         // 1. accept a new connection from client
         // 2. create a task with the socket
