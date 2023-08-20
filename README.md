@@ -6,6 +6,7 @@ The following setup is about configuring the AWS cloud service:
 Region: US East (N. Virginia) us-east-1
 
 Step 1: Create VPC Service
+---------------
 
 -> Click "Your VPC" then Click "Create VPC"
 -> Resources to create: Click "VPC and more" instead of "VPC only"
@@ -16,9 +17,10 @@ Step 1: Create VPC Service
 ![image](https://github.com/HowardWHC/Product-of-Matrix-calculation-with-Amazon-Web-Service-connection/assets/106338557/f110d8c2-f0d1-421d-bb5f-e6a110f93b39)
 
 Another setting that hasn't been mentioned, leave it by default setting.
----------------
+
 
 Step 2: Create security group
+---------------
 Staying the same Services, click "Security groups" under "Security", then click "Create security group".
 
 -> Security group name: set it to "mini_project" 
@@ -39,8 +41,9 @@ Source type: Anywhere-IPv4
 
 
 Another setting that hasn't been mentioned, leave it by default setting.
-----------------
+
 Step 3: Launch EC2 instances
+----------------
 
 -> Click "Instances" under "Instances", then click "Launch instances".
 -> Name: name "Mini_project"
@@ -51,13 +54,15 @@ Step 3: Launch EC2 instances
 -> Firewall (security groups) under Network: select "select existing security group" instead of "Create security group". At the same time, select "mini_project" (that's VPC created before) in Common security groups.
 
 Another setting that hasn't been mentioned, leave it by default setting.
-----------------
+
 
 ###
 Go back Instance interface to check whether EC2 successfully created, Public IPv4 address is the address that will be used later on the command.
 ###
 
 Step 4: In the user learner lab, download .pem file for ssh configuration.
+----------------
+
 ![image](https://github.com/HowardWHC/Product-of-Matrix-calculation-with-Amazon-Web-Service-connection/assets/106338557/8a782815-a51b-4f50-aa73-c9c49c592578)
 
 Step 5: Open command, and input the following command:
